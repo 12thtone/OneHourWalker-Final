@@ -122,7 +122,7 @@ class TimerViewController: UIViewController, CLLocationManagerDelegate {
         let heightSample = HKSampleType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeight)
         
         // Call HealthKitManager's getSample() method to get the user's height.
-        self.healthManager.getSample(heightSample!, completion: { (userHeight, error) -> Void in
+        self.healthManager.getHeight(heightSample!, completion: { (userHeight, error) -> Void in
             
             if( error != nil ) {
                 print("Error: \(error.localizedDescription)")

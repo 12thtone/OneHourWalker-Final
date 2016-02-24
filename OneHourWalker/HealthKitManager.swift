@@ -34,7 +34,7 @@ class HealthKitManager {
         }
     }
     
-    func getSample(sampleType: HKSampleType , completion: ((HKSample!, NSError!) -> Void)!) {
+    func getHeight(sampleType: HKSampleType , completion: ((HKSample!, NSError!) -> Void)!) {
         
         // Predicate for the height query
         let distantPastHeight = NSDate.distantPast() as NSDate
